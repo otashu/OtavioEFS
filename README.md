@@ -33,4 +33,4 @@
   3. iniciei a criação do script ApacheFunciona.sh
   4. configurei o git
   5. configurei o EFS no fstab
-  6. coloquei o script no fstab, primeiramente para rodar a cada 1 min, para testes
+  6. coloquei o script no crontab, primeiramente para rodar a cada 1 min, para testes
