@@ -26,4 +26,8 @@
     mkdir /efs
     sudo mount -t efs -o tls fs-064979e66c91d498e:/ /efs
     
-### Depois de criada a instância, instalei o git, iniciei o crond e iniciei a criação do script ApacheFunciona.sh, configurei o git.
+### Depois de criada a instância:
+  1. instalei o git
+  2. iniciei o crond 
+  3. iniciei a criação do script ApacheFunciona.sh
+  4.  configurei o git.
