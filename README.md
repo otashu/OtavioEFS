@@ -6,14 +6,14 @@ Primeiro criei um EFS, para poder configura-lo no user data da instância no mom
 Detalhes da Instância: 
   -SO: Amazon Linux 2 (Família t3.small, 16 GB SSD);
 
-  -Portas Liberadas no SG:
-    *22/TCP
-    *111/TCP
-    *111/UDP
-    *2049/TCP
-    *2049/UDP
-    *80/TCP
-    *443/TCP
+  - Portas Liberadas no SG:
+    * 22/TCP
+    * 111/TCP
+    * 111/UDP
+    * 2049/TCP
+    * 2049/UDP
+    * 80/TCP
+    * 443/TCP
   
   -Volume: 1x16GB gp2
 
