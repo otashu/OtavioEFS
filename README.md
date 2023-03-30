@@ -25,7 +25,7 @@
     systemctl enable httpd && systemctl start httpd  
     sudo yum install -y amazon-efs-utils  
     mkdir /efs  
-    sudo mount -t efs -o tls fs-064979e66c91d498e:/ /efs  
+    sudo mount -t efs -o tls fs-xxxxxxxxxxxxx:/ /efs  
     
   - **IP Elástico:**  
     44.195.168.181
