@@ -1,12 +1,13 @@
 #!/bin/bash
 
 day=$(date +'%d/%m/%Y')
+hour=$(date +'%I:%M:%S')
 isActive=$(systemctl is-active httpd.service)
-echo "Olá! O servidor estava ">>/efs/OtavioCosta/logs.txt;
+echo -en "\nOlá! O servidor está">>/efs/OtavioCosta/logs.txt;
 if [ $isActive == "active" ];
 then
-	echo -e "Funcionando!" >> /efs/OtavioCosta/logs.txt
+	echo " Funcionando!" >> /efs/OtavioCosta/logs.txt
 else
-	echo -e "Inativo :(">>/efs/OtavioCosta/logs.txt
+	echo " Inativo :(">>/efs/OtavioCosta/logs.txt
 fi
-echo "$day"
+echo -e "Dia: $day, horário: $hour\n" >> /efs/OtavioCosta/logs.txt
