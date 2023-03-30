@@ -4,7 +4,7 @@
 Primeiro criei um EFS, para poder configura-lo no user data da instância no momento de sua criação, junto com o apache para facilitar o processo.
 
 Detalhes da Instância: 
-  -SO: Amazon Linux 2 (Família t3.small, 16 GB SSD);
+  - SO: Amazon Linux 2 (Família t3.small, 16 GB SSD);
 
   - Portas Liberadas no SG:
     * 22/TCP
@@ -15,9 +15,9 @@ Detalhes da Instância:
     * 80/TCP
     * 443/TCP
   
-  -Volume: 1x16GB gp2
+  - Volume: 1x16GB gp2
 
-  -userdata:
+  - userdata:
     #!/bin/bash
     yum update -y
     yum install httpd -y
