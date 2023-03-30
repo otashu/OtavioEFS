@@ -1,4 +1,6 @@
 #!/bin/bash
+
+day=$(date +'%d/%m/%Y')
 isActive=$(systemctl is-active httpd.service)
 echo "Olá! O servidor estava ">>/efs/OtavioCosta/logs.txt;
 if [ $isActive == "active" ];
@@ -7,3 +9,4 @@ then
 else
 	echo -e "Inativo :(">>/efs/OtavioCosta/logs.txt
 fi
+echo "$day"
