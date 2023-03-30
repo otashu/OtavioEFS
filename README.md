@@ -17,7 +17,7 @@
   
   - Volume: 1x16GB gp2
 
-  - userdata:
+  - userdata:  
     #!/bin/bash  
     yum update -y  
     yum install httpd -y  
