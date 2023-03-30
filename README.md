@@ -35,3 +35,4 @@
   5. configurei o git
   6. configurei o EFS no fstab
   7. coloquei o script no crontab, primeiramente para rodar a cada 1 min, para testes
+  8. coloquei a data no script
