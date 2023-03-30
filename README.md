@@ -27,6 +27,9 @@
     mkdir /efs  
     sudo mount -t efs -o tls fs-064979e66c91d498e:/ /efs  
     
+  - **IP Elástico:**  
+    44.195.168.181
+    
 ### **Depois de criada a instância:**
   1. instalei o git
   2. iniciei o crond 
@@ -34,5 +37,6 @@
   4. dei as permições necessárias para o script (sudo chmod +x ApacheFunciona.sh)
   5. configurei o git
   6. configurei o EFS no fstab
-  7. coloquei o script no crontab, primeiramente para rodar a cada 1 min, para testes
-  8. coloquei a data no script
+  7. coloquei o script no crontab, primeiramente para rodar a cada 1 min, para testes, depois a cada 5 minutos
+  8. coloquei data e horário no script
+  9. modifiquei o arquivo de configuração do apache para mostrar os arquivos na pasta de EFS
