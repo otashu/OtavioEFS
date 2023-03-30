@@ -37,6 +37,6 @@
   4. dei as permições necessárias para o script (sudo chmod +x ApacheFunciona.sh)
   5. configurei o git
   6. configurei o EFS no fstab
-  7. coloquei o script no crontab, primeiramente para rodar a cada 1 min, para testes, depois a cada 5 horas
+  7. coloquei o script no crontab, primeiramente para rodar a cada 1 min, para testes, depois a cada 5 minutos
   8. coloquei data e horário no script
   9. modifiquei o arquivo de configuração do apache para mostrar os arquivos na pasta de EFS
