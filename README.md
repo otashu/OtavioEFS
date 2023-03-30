@@ -4,7 +4,7 @@
 ### *Primeiro criei um EFS, para poder configura-lo no user data da instância no momento de sua criação, junto com o apache para facilitar o processo.*
 
 ### *Detalhes da Instância:* 
-  - **SO: Amazon Linux 2 (Família t3.small, 16 GB SSD)**
+  - **SO: Amazon Linux 2 (Família t3.small)**
 
   - **Portas Liberadas no SG:**
     * 22/TCP
