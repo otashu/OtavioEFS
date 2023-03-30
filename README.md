@@ -27,6 +27,9 @@
     mkdir /efs  
     sudo mount -t efs -o tls fs-064979e66c91d498e:/ /efs  
     
+  - **IP Elástico:**  
+    44.195.168.181
+    
 ### **Depois de criada a instância:**
   1. instalei o git
   2. iniciei o crond 
