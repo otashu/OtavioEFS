@@ -31,6 +31,7 @@
   1. instalei o git
   2. iniciei o crond 
   3. iniciei a criação do script ApacheFunciona.sh
-  4. configurei o git
-  5. configurei o EFS no fstab
-  6. coloquei o script no crontab, primeiramente para rodar a cada 1 min, para testes
+  4. dei as permições necessárias para o script (sudo chmod +x ApacheFunciona.sh)
+  5. configurei o git
+  6. configurei o EFS no fstab
+  7. coloquei o script no crontab, primeiramente para rodar a cada 1 min, para testes
