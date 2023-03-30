@@ -1,7 +1,7 @@
 #!/bin/bash
 
 day=$(date +'%d/%m/%Y')
-hour=$(date +'%I:%M:%S')
+hour=$(date +'%T')
 isActive=$(systemctl is-active httpd.service)
 echo -en "\nOlá! O servidor está">>/efs/OtavioCosta/logs.txt;
 if [ $isActive == "active" ];
