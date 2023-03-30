@@ -18,13 +18,13 @@
   - Volume: 1x16GB gp2
 
   - userdata:
-    * #!/bin/bash
-    yum update -y
-    yum install httpd -y
-    systemctl enable httpd && systemctl start httpd
-    sudo yum install -y amazon-efs-utils
-    mkdir /efs
-    sudo mount -t efs -o tls fs-064979e66c91d498e:/ /efs
+    #!/bin/bash  
+    yum update -y  
+    yum install httpd -y  
+    systemctl enable httpd && systemctl start httpd  
+    sudo yum install -y amazon-efs-utils  
+    mkdir /efs  
+    sudo mount -t efs -o tls fs-064979e66c91d498e:/ /efs  
     
 ### Depois de criada a instância:
   1. instalei o git
