@@ -1,9 +1,9 @@
 # OtavioEFS
-##Criando uma instancia com um EFS na aws, configurando apache e fazendo um script que avisa se o servidor está online ou offline. 
+## Criando uma instancia com um EFS na aws, configurando apache e fazendo um script que avisa se o servidor está online ou offline. 
 
-Primeiro criei um EFS, para poder configura-lo no user data da instância no momento de sua criação, junto com o apache para facilitar o processo.
+### Primeiro criei um EFS, para poder configura-lo no user data da instância no momento de sua criação, junto com o apache para facilitar o processo.
 
-Detalhes da Instância: 
+### Detalhes da Instância: 
   - SO: Amazon Linux 2 (Família t3.small, 16 GB SSD);
 
   - Portas Liberadas no SG:
@@ -26,4 +26,4 @@ Detalhes da Instância:
     mkdir /efs
     sudo mount -t efs -o tls fs-064979e66c91d498e:/ /efs
     
-Depois de criada a instância, instalei o git, iniciei o crond e iniciei a criação do script ApacheFunciona.sh, configurei o git.
+### Depois de criada a instância, instalei o git, iniciei o crond e iniciei a criação do script ApacheFunciona.sh, configurei o git.
