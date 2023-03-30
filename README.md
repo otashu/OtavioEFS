@@ -31,4 +31,5 @@
   1. instalei o git
   2. iniciei o crond 
   3. iniciei a criação do script ApacheFunciona.sh
-  4.  configurei o git
+  4. configurei o git
+  5. configurei o EFS no fstab
