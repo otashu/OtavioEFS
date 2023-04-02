@@ -41,5 +41,5 @@
   4. Mova o script `ApacheFunciona.sh` para o diretório `/efs`, com o comando `sudo mv ApacheFunciona.sh /efs` 
   5. Para que o script seja executado a cada 5 minutos, será necessário modificar o `crontab`, podemos acessar este arquivo com o comando `crontab -e`, possivelmente o arquivo aberto estará em branco. Para executar adicionar a linha `*/5 * * * *  bash /efs/ApacheFunciona.sh`, para que o bash execute o execute o script `ApacheFunciona.sh` à cada 5 minutos.
   6. Reinicie o crond para que suas alterações tenham efeito com `sudo service crond restart`
-  7. A modificação dos arquivos de configuração do Apache é necessária para mostrar os arquivos na pasta de EFS, primeiramente modificar a linha `DocumentRoot "/var/www/html"` para `DocumentRoot "/efs"`
+  7. A modificação dos arquivos de configuração do Apache é necessária para que o arquivo index.html, presente no EFS seja usado. Primeiramente devemos modificar o arquivo "/etc/httpd/conf/httpd.conf", mudando a linha `DocumentRoot "/var/www/html"` para `DocumentRoot "/efs"`.
   8. Reinicie o apache para que suas alterações tenham efeito com `sudo service httpd restart`
