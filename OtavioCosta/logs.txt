@@ -35,3 +35,15 @@ Dia: 31/03/2023, horário: 17:50:01
 Olá! O servidor está Inativo :(
 Dia: 31/03/2023, horário: 17:55:01
 
+
+Olá! O servidor está Funcionando!
+Dia: 02/04/2023, horário: 13:35:01
+
+
+Olá! O servidor está Funcionando!
+Dia: 02/04/2023, horário: 13:40:01
+
+
+Olá! O servidor está Funcionando!
+Dia: 02/04/2023, horário: 13:45:01
+
