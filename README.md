@@ -5,7 +5,7 @@
 
 ## Criando uma instancia com um EFS na aws, configurando apache e fazendo um script que avisa se o servidor está online ou offline. 
 
-### *Primeiro, crie um EFS, para poder configura-lo no user data da instância no momento de sua criação, junto com o apache para facilitar o processo.*
+### *Primeiro, crie um `EFS(NFS da amazon)` e um `ip elástico(Endereço ip público que não se altera, se encontra dentro de ec2)`.*
 
 ### *Detalhes da Instância:* 
   - **SO: Amazon Linux 2 (Família t3.small)**
@@ -30,7 +30,7 @@
     sudo yum install -y amazon-efs-utils  
     mkdir /efs  
     sudo mount -t efs -o tls fs-xxxxxxxxxxxxx:/ /efs  
-    >Esse script vai instalar o Apache com `yum install httpd -y`, inicia-lo com `systemctl enable httpd && systemctl start httpd`, instalar os pacotes necessários para o efs com `sudo yum install -y amazon-efs-utils`, cria a pasta /efs com `mkdir /efs`, monta o EFS com `sudo mount -t efs -o tls fs-xxxxxxxxxxxxx:/ /efs`, onde `fs-xxxxxxxxxxxxx` é o código de seu EFS.
+    >Esse script vai instalar o Apache com `yum install httpd -y`, inicia-lo com `systemctl enable httpd && systemctl start httpd`, instalar os pacotes necessários para o efs com `sudo yum install -y amazon-efs-utils`, cria a pasta /efs com `mkdir /efs`, montar o EFS com `sudo mount -t efs -o tls fs-xxxxxxxxxxxxx:/ /efs`, onde `fs-xxxxxxxxxxxxx` é o código de seu EFS.
     
   - **IP Elástico:**  
     44.195.168.181
@@ -39,7 +39,9 @@
     RSA
     
 ### **Depois de criada a instância:**
-  1. Crie o script `ApacheFunciona.sh`, neste repositório ele se encontra no diretório raiz. 
+1. Associe o `ip elástico` à instância, para que seu ip não se altere.
+2. Conecte-se à instância via ssh
+  1. Crie o script `ApacheFunciona.sh`, neste repositório, ele se encontra no diretório raiz. 
   2. O script precisa de permissão para ser executado, no caso `sudo chmod +x ApacheFunciona.sh` será suficiente.
   3. É necessário colocar o EFS no arquivo fstab, para que ele monte automáticamente na inicialização da instância. Podemos fazer isto modificando o arquivo `/etc/fstab`, inserindo `fs-XXXXXXXX:/ /efs efs defaults,_netdev 0 0` em uma nova linha.
   4. Mova o script `ApacheFunciona.sh` para o diretório `/efs`, com o comando `sudo mv ApacheFunciona.sh /efs` 
