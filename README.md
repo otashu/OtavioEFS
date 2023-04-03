@@ -1,4 +1,8 @@
 # OtavioEFS
+<p align="center">
+    <img src="https://www.sophos.com/sites/default/files/2022-02/aws-logo-white-orange.png">
+  </p>
+
 ## Criando uma instancia com um EFS na aws, configurando apache e fazendo um script que avisa se o servidor está online ou offline. 
 
 ### *Primeiro, crie um EFS, para poder configura-lo no user data da instância no momento de sua criação, junto com o apache para facilitar o processo.*
